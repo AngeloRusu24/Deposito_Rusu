@@ -1,0 +1,10 @@
+/* Questo è un file separato chiamato ProvaCss.css */
+
+p {
+  color: blue;      /* Imposta il colore del testo in blu per tutti i tag <p> */
+  font-size: 18px;  /* Imposta la dimensione del carattere a 18 pixel */
+}
+
+    .evidenziato {
+        background-color: yellow; /* Imposta il colore di sfondo a giallo per gli elementi con la classe "evidenziato" */
+    }

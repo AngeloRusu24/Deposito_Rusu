@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Registrazione al Servizio</title>
+</head>
+<body>
+
+    <div>
+        <h1>Benvenuto su TechLearn</h1>
+    </div>
+
+    <div>
+        <h2>Crea il tuo account gratuito</h2>
+        <p>Unisciti alla nostra community per accedere a <strong>contenuti esclusivi</strong>. La registrazione è <em>veloce e sicura</em>.</p>
+    </div>
+
+    <div>
+        <form action="/submit-registration" method="POST">
+            
+            <div>
+                <label for="nome">Nome completo:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+            </div><br>
+
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="esempio@mail.it" required>
+            </div><br>
+
+            <div>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Minimo 8 caratteri" required>
+            </div><br>
+
+            <div>
+                <p>Tipo di profilo:</p>
+                <input type="radio" id="studente" name="profilo" value="studente" checked>
+                <label for="studente">Studente</label>
+                <input type="radio" id="docente" name="profilo" value="docente">
+                <label for="docente">Docente</label>
+            </div><br>
+
+            <div>
+                <label for="corso">Corso di interesse:</label><br>
+                <select id="corso" name="corso">
+                    <option value="web">Web Development</option>
+                    <option value="data">Data Science</option>
+                    <option value="design">UI/UX Design</option>
+                </select>
+            </div><br>
+
+            <div>
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">Accetto i termini e le condizioni</label>
+            </div><br>
+
+            <div>
+                <button type="submit">Registrati ora</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

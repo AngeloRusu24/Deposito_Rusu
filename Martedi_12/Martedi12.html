@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Esempio Select HTML</title>
+</head>
+<body>
+
+    <h2>Prenotazione Corso</h2>
+
+    <form action="/salva-scelta" method="POST">
+        <label for="lingua-programmazione">Quale linguaggio vuoi imparare?</label>
+        <br><br>
+
+        <select id="lingua-programmazione" name="linguaggio">
+            <option value="">-- Seleziona un'opzione --</option>
+            <option value="html">HTML (Struttura)</option>
+            <option value="css">CSS (Stile)</option>
+            <option value="js">JavaScript (Logica)</option>
+            <option value="python">MySQL (Database)</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Invia Scelta</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html> <!-- Dichiarazione del tipo di documento -->
+<html lang="it"> <!-- Apertura del documento HTML in lingua italiana -->
+
+<head>
+    <!-- SEZIONE META-DATI (FONDAMENTALI) -->
+    <meta charset="UTF-8"> <!-- Codifica caratteri per visualizzare correttamente accenti e simboli -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Rende il sito responsive su mobile -->
+    <meta name="description" content="Sito ufficiale per la registrazione all'evento Tech Conference 2026"> <!-- Descrizione per i motori di ricerca -->
+    <title>Tech Conference 2026 - Registrazione</title>
+</head>
+
+<body>
+
+    <!-- ELEMENTI SEMANTICI DI STRUTTURA -->
+    <header>
+        <!-- Testata del sito -->
+        <h1>Tech Conference 2026</h1>
+        <p>L'evento dell'anno per gli sviluppatori <span style="color: blue;">Full Stack</span>.</p> <!-- Uso dello span richiesto -->
+    </header>
+
+    <nav>
+        <!-- Navigazione principale -->
+        <ul>
+            <li><a href="#programma">Programma</a></li>
+            <li><a href="#iscrizione">Iscriviti</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Contenuto principale del sito -->
+
+        <section id="descrizione">
+            <h2>Informazioni sull'evento</h2>
+            <article>
+                <h3>Perché partecipare?</h3>
+                <p>Partecipa per scoprire le ultime novità su HTML6, AI e Web Design.</p>
+                <!-- Immagine con attributo alt richiesto -->
+                <img src="https://via.placeholder.com/400x200" alt="Logo dell'evento tecnologico">
+            </article>
+        </section>
+
+        <section id="media">
+            <h2>Anteprima Evento</h2>
+            <!-- Sezione multimediale video -->
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Il tuo browser non supporta il tag video.
+            </video>
+        </section>
+
+        <section id="programma">
+            <h2>Programma dell'evento</h2>
+            <!-- Tabella strutturata con thead e tbody -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Orario</th>
+                        <th>Attività</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00</td>
+                        <td>Apertura e Welcome Coffee</td>
+                    </tr>
+                    <tr>
+                        <td>11:00</td>
+                        <td>Workshop HTML Avanzato</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr> <!-- Linea di separazione visiva -->
+
+        <section id="iscrizione">
+            <h2>Form di Iscrizione</h2>
+            <!-- Form completo con metodo POST -->
+            <form action="/registrazione" method="POST">
+                
+                <!-- Input di testo e email con label e placeholder -->
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+                </div><br>
+
+                <div>
+                    <label for="email">Email Aziendale:</label>
+                    <input type="email" id="email" name="email" placeholder="nome@azienda.it" required>
+                </div><br>
+
+                <div>
+                    <label for="password">Crea Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div><br>
+
+                <!-- Radio Button per scelta singola -->
+                <div>
+                    <p>Esperienza:</p>
+                    <input type="radio" id="junior" name="livello" value="junior" checked>
+                    <label for="junior">Junior</label>
+                    <input type="radio" id="senior" name="livello" value="senior">
+                    <label for="senior">Senior</label>
+                </div><br>
+
+                <!-- Select per menu a tendina -->
+                <div>
+                    <label for="sessione">Scegli la sessione:</label>
+                    <select id="sessione" name="sessione">
+                        <option value="mattina">Mattina</option>
+                        <option value="pomeriggio">Pomeriggio</option>
+                    </select>
+                </div><br>
+
+                <!-- Textarea per messaggi lunghi -->
+                <div>
+                    <label for="note">Note o allergie alimentari:</label><br>
+                    <textarea id="note" name="note" rows="4" cols="30" placeholder="Scrivi qui..."></textarea>
+                </div><br>
+
+                <!-- Checkbox per consenso -->
+                <div>
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Accetto il trattamento dei dati</label>
+                </div><br>
+
+                <!-- Pulsante di invio -->
+                <button type="submit">Invia Iscrizione</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Piè di pagina -->
+        <p>&copy; 2026 Tech Conference - Tutti i diritti riservati.</p>
+    </footer>
+
+</body>
+</html>
