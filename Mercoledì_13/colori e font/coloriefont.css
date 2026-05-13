@@ -1,0 +1,25 @@
+/* Stile per l'intero corpo della pagina */
+body {
+  background-color: #f0f0f0;        /* Grigio molto chiaro per lo sfondo della pagina */
+  font-family: Arial, sans-serif;    /* Font pulito; usa sans-serif come fallback */
+}
+
+/* Stile per il contenitore bianco */
+.box {
+  background-color: white;           /* Sfondo bianco per far risaltare il contenuto */
+  padding: 20px;                    /* Spazio interno di 20 pixel tra bordo e testo */
+}
+
+/* Tipografia per il titolo */
+h1 {
+  color: #2c3e50;                   /* Colore blu scuro/grigio (Hex) */
+  font-size: 2rem;                   /* Dimensione del carattere (doppia rispetto alla base) */
+  line-height: 1.2;                  /* Spaziatura tra le linee stretta per i titoli */
+}
+
+/* Tipografia per il paragrafo */
+p {
+  color: rgb(80, 80, 80);           /* Colore grigio scuro definito in formato RGB */
+  font-size: 1rem;                   /* Dimensione del carattere standard */
+  line-height: 1.6;                  /* Spaziatura tra le linee più ampia per la leggibilità */
+}

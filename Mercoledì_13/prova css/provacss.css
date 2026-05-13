@@ -1,0 +1,15 @@
+/* REGOLA 1 */
+p {
+  color: blue; /* Il browser legge questa regola e pensa di farlo blu */
+}
+
+/* REGOLA 2 (Vincitrice) */
+p {
+  color: red;  /* Essendo dichiarata per ultima, questa regola sovrascrive la precedente */
+}
+
+/* 
+   RISULTATO: 
+   Il testo apparirà ROSSO perché entrambe le regole hanno la stessa specificità, 
+   quindi vince l'ordine cronologico.
+*/

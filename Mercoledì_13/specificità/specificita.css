@@ -1,0 +1,21 @@
+/* REGOLA 1: Selettore di elemento (Peso basso) */
+p {
+  color: blue; /* Il browser lo colorerebbe di blu... */
+}
+
+/* REGOLA 2: Selettore di classe (Peso medio) */
+.testo {
+  color: orange; /* ...ma questa regola è più specifica e vincerebbe sul blu... */
+}
+
+/* REGOLA 3: Selettore di ID (Peso alto - VINCITORE) */
+#titolo {
+  color: red; /* ...però l'ID è il "re" della specificità e vince su tutti! */
+}
+
+/* 
+   RISULTATO: 
+   Il testo sarà ROSSO. 
+   Non importa l'ordine in cui sono scritte: un ID batte sempre una classe, 
+   e una classe batte sempre un tag.
+*/

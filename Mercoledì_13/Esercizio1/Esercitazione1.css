@@ -1,0 +1,68 @@
+/* --- 1. SELETTORE PER TAG & TIPOGRAFIA --- */
+body {
+    /* Unità di misura rem per la tipografia */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4; /* Colore di sfondo della pagina */
+}
+
+/* --- 2. BOX MODEL & UNITÀ DI MISURA --- */
+.box-container {
+    /* Content: dimensioni espresse in percentuale e pixel */
+    width: 80%; 
+    max-width: 600px;
+    
+    /* Margin: spazio esterno (centra il div) */
+    margin: 50px auto; 
+    
+    /* Padding: spazio interno */
+    padding: 2rem; 
+    
+    /* Border: contorno dell'elemento */
+    border: 5px solid #2c3e50;
+    
+    background-color: white;
+}
+
+/* --- 3. CASCATA E SPECIFICITÀ --- */
+
+/* Regola con selettore per classe (Specificità media) */
+.testo-comune {
+    color: blue;
+}
+
+/* Regola con selettore per ID (Specificità alta) */
+/* Questa vincerà sulla classe, rendendo il testo rosso */
+#titolo-principale {
+    color: red;
+    font-size: 2.5em; /* Unità di misura em */
+}
+
+/* --- 4. SELETTORE PER CLASSE & CONFLITTO (CASCATA) --- */
+.descrizione {
+    color: green;
+}
+
+/* Regola in conflitto: essendo scritta dopo, vincerà questa */
+.descrizione {
+    color: #333;
+    line-height: 1.6; /* Tipografia: spaziatura interlinea */
+}
+
+/* --- 5. PSEUDO-CLASSE (:hover) --- */
+.pulsante {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    border: 1px solid #2c3e50;
+    padding: 10px 20px;
+}
+
+/* Cambia stile quando il mouse passa sopra l'elemento */
+.pulsante:hover {
+    background-color: #2c3e50;
+    color: white;
+    transition: 0.3s; /* Transizione fluida */
+}

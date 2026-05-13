@@ -1,0 +1,11 @@
+/* Definiamo lo stile per il tag div (il genitore) */
+div {
+  /* Impostiamo il colore del testo su verde */
+  color: green; 
+}
+
+/* 
+   Nota: Non abbiamo scritto nessuna regola specifica per il tag <p>.
+   Tuttavia, poiché 'color' è una proprietà ereditabile, il paragrafo 
+   all'interno del div diventerà verde automaticamente.
+*/
