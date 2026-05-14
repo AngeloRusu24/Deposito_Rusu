@@ -1,0 +1,12 @@
+/* Pseudo-elemento ::before: inserisce contenuto PRIMA del testo dell'elemento */
+.messaggio::before {
+  /* La proprietà 'content' è obbligatoria per far apparire lo pseudo-elemento */
+  content: "⚠️ "; 
+  color: red;    /* Il simbolo di avviso sarà rosso */
+}
+
+/* Pseudo-elemento ::after: aggiunge contenuto DOPO il testo dell'elemento */
+.messaggio::after {
+  content: " ✓"; 
+  color: green;  /* Il simbolo di conferma sarà verde */
+}

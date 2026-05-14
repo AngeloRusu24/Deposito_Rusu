@@ -1,0 +1,24 @@
+/* Definizione delle variabili globali */
+:root {
+  /* Le variabili iniziano sempre con il doppio trattino '--' */
+  --colore-principale: #3498db;
+  --colore-testo: #2c3e50;
+  --spaziatura: 20px;
+}
+
+/* Utilizzo delle variabili nella card */
+.card {
+  /* La variabile --colore-principale viene usata come sfondo della card */
+  background-color: var(--colore-principale);
+  
+  /* --spaziatura controlla il padding */
+  padding: var(--spaziatura);
+  
+  color: white;
+}
+
+/* Utilizzo delle variabili negli elementi interni */
+h1 {
+  /* --colore-testo viene applicata al titolo */
+  color: var(--colore-testo);
+}

@@ -1,0 +1,30 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: steelblue;
+  
+  /* Crea un effetto fluido quando l'elemento cambia proprietà (es. dimensione) */
+  transition: transform 0.5s;
+  
+  /* Esegue l'animazione 'cambioColore' ogni 3 secondi all'infinito */
+  animation: cambioColore 3s infinite;
+}
+
+/* Effetto al passaggio del mouse */
+.box:hover {
+  /* Ingrandisce il box del 20% rispetto alla dimensione originale */
+  transform: scale(1.2);
+}
+
+/* Definizione dell'animazione temporale */
+@keyframes cambioColore {
+  0% {
+    background-color: steelblue; /* Colore iniziale */
+  }
+  50% {
+    background-color: coral;    /* Cambia colore a metà animazione */
+  }
+  100% {
+    background-color: steelblue; /* Torna al colore iniziale per un loop fluido */
+  }
+}

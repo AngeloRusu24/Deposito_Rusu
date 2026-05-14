@@ -1,0 +1,81 @@
+/* --- 1. VARIABILI CSS --- */
+:root {
+    --colore-primario: #ff99cc; /* Rosa pastello per la gelateria */
+    --colore-secondario: #fdfd96; /* Giallo crema */
+    --colore-testo: #4a4a4a;
+    --transizione-veloce: 0.3s ease;
+}
+
+/* --- 2. LAYOUT E TIPOGRAFIA --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colore-testo);
+    background-color: #fffaf0; /* Bianco crema */
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--colore-primario);
+    padding: 1rem;
+    text-align: center;
+    animation: fadeIn 2s; /* Animazione all'apertura */
+}
+
+/* --- 3. ANIMAZIONI --- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- 4. CARD PROMOZIONALE CON PSEUDO-ELEMENTO E HOVER --- */
+.promo-card {
+    background-color: white;
+    border: 2px solid var(--colore-primario);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    position: relative; /* Per posizionare lo pseudo-elemento */
+    transition: transform var(--transizione-veloce), box-shadow var(--transizione-veloce);
+    cursor: pointer;
+}
+
+/* Effetto :hover con transizione */
+.promo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Pseudo-elemento ::after per etichetta "OFFERTA" */
+.promo-card::after {
+    content: "OFFERTA!";
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* --- 5. DISPLAY VS VISIBILITY --- */
+
+/* display: none -> Rimuove l'elemento e il suo spazio dal layout */
+.messaggio-segreto {
+    display: none; 
+}
+
+/* visibility: hidden -> L'elemento scompare ma lo SPAZIO rimane occupato */
+.spazio-vuoto {
+    visibility: hidden;
+    background-color: #eee;
+    height: 50px;
+}
+
+/* Stile gusti esauriti */
+.esaurito {
+    color: #ccc;
+    text-decoration: line-through;
+}

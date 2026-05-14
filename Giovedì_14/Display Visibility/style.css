@@ -1,0 +1,25 @@
+/* BOX 1: Visualizzato normalmente */
+.box1 {
+  /* L'elemento si comporta come un blocco standard */
+  display: block; 
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* BOX 2: Invisibile ma presente */
+.box2 {
+  /* L'elemento è invisibile, ma occupa ancora spazio nella pagina */
+  visibility: hidden; 
+  background-color: lightgreen;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* BOX 3: Completamente rimosso */
+.box3 {
+  /* L'elemento è rimosso dal layout e non occupa alcuno spazio */
+  display: none; 
+  background-color: coral;
+  padding: 10px;
+}
