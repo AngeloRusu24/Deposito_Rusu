@@ -1,0 +1,21 @@
+/* Configurazione del contenitore */
+.container {
+  display: grid; /* Attiva il layout grid */
+  
+  /* Definisce la mappa visiva del layout */
+  grid-template-areas:
+    "header header"  /* La prima riga è interamente occupata dall'header */
+    "sidebar content" /* La seconda riga è divisa tra sidebar e content */
+    "footer footer";  /* La terza riga è interamente occupata dal footer */
+    
+  /* Definisce le proporzioni delle colonne: la seconda è il doppio della prima */
+  grid-template-columns: 1fr 2fr; 
+  
+  gap: 10px; /* Spazio tra gli elementi della griglia */
+}
+
+/* Assegnazione degli elementi alle aree definite sopra */
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.footer { grid-area: footer; }

@@ -1,0 +1,31 @@
+/* Configurazione del Flex Container */
+.container {
+  /* Attiva il modello Flexbox */
+  display: flex;
+  
+  /* Distribuisce gli elementi lungo l'asse principale (orizzontale) 
+     creando spazio uguale tra di essi */
+  justify-content: space-between;
+  
+  /* Allinea gli elementi verticalmente al centro rispetto all'asse trasversale */
+  align-items: center;
+  
+  /* Altezza fissa per visualizzare meglio l'allineamento verticale */
+  height: 200px;
+  
+  background-color: lightgray;
+}
+
+/* Configurazione dei Flex Items */
+.item {
+  width: 50px;
+  height: 50px;
+  background-color: steelblue;
+  color: white;
+  
+  /* Ogni .item usa a sua volta Flexbox per centrare perfettamente 
+     il numero (contenuto interno) sia in orizzontale che in verticale */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

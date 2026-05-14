@@ -1,0 +1,62 @@
+/* --- RESET E BASE --- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: sans-serif; background-color: #f0f2f5; }
+
+/* --- CSS GRID: LAYOUT PRINCIPALE --- */
+.main-layout {
+    display: grid;
+    /* Definiamo la struttura logica (grid-template-areas) */
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    /* Unità diverse: sidebar in pixel, contenuto in frazioni (fr) */
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    /* Spazio tra le zone della griglia */
+    gap: 15px; 
+}
+
+/* Assegnazione aree */
+.page-header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.content { grid-area: content; }
+.page-footer { grid-area: footer; }
+
+/* --- FLEXBOX: ALLINEAMENTO INTERNO (HEADER) --- */
+.page-header {
+    display: flex;
+    justify-content: space-between; /* Allineamento orizzontale */
+    align-items: center;            /* Centratura verticale */
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    /* Necessario per il posizionamento assoluto del badge */
+    position: relative; 
+}
+
+/* --- POSIZIONAMENTO: ELEMENTO ABSOLUTE --- */
+.badge {
+    position: absolute;
+    top: 5px;      /* Posizionamento preciso */
+    right: 10px;
+    background-color: #e74c3c;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+/* --- STILI DI ABBELLIMENTO --- */
+.sidebar { background-color: #ecf0f1; padding: 20px; }
+.content { background-color: white; padding: 40px; }
+.page-footer { 
+    background-color: #34495e; 
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    padding: 15px; 
+}
+
+/* Navigazione Flex */
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: white; text-decoration: none; }

@@ -1,0 +1,27 @@
+/* Configurazione del contenitore della griglia */
+.container {
+  /* Attiva il modello di layout a griglia; i figli diretti diventano grid items */
+  display: grid;
+  
+  /* Crea 3 colonne di uguale larghezza usando l'unità fr (fraction).
+     L'unità fr divide equamente lo spazio disponibile nel contenitore. */
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  /* Aggiunge uno spazio di 10px tra le righe e le colonne della griglia */
+  gap: 10px;
+}
+
+/* Stile per i singoli elementi della griglia */
+.item {
+  /* Colore di sfondo blu acciaio per rendere visibili i blocchi */
+  background-color: steelblue;
+  
+  /* Colore del testo bianco */
+  color: white;
+  
+  /* Spazio interno di 20px per allontanare il testo dai bordi del blocco */
+  padding: 20px;
+  
+  /* Centra il testo orizzontalmente all'interno di ogni cella */
+  text-align: center;
+}
