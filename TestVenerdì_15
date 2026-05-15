@@ -1,0 +1,45 @@
+- Cos'è uno stack? Quali conosci? Citali e spiegali
+
+lo stack è un insieme di tecnologie utilizzate per sviluppare un appliccazione completa, da un punto di vista tecnico, uno stack comprende tutti i livelli di sistema, ci sono diversi tipo di stack: IL MEAN,
+che è utilizzato puramente in Javascript infatti viene utilizzato sia in lato client e in lato server, IL MERN uguale con il mean solo che sostituisce Angular con React,
+LAMP questo viene utilizzato per apliccazione server side-tradizioni ovvero sistemi operativi (L sta per Linux, per Windows si chiama WAMP),
+infine c'è un altro stack che si basa su l'uso completo di Java, infatti nel mean viene chiamato Javascript Everywhere con questo si chiama Java Everywhere
+
+- Cos'è uno HTML? quali sono le sue principali carrateristiche?
+
+L'HTML è un linguaggio markup e serve per difinire la struttura logica di una pagina web, non è un linguaggio di programmmazione, ma un sistema basato su elementi che descrivono il contenuto.
+l'html è strutturato in: Strutturale, organizza il contenuto, Dichiarativo, descrive cosa rappresenta, Stanadrdizzato definito dal W3c e supporta i browser moderni, e Semantico, utilizza tag che descrivono il significato del contento,
+l'html ha delle caratteristiche principali, ovvero che è basato su elementi e attributi, ha una struttura ad albero ovveri che fa una rappresentazione grafica navigabile e manipolabile ,
+tolleranza agli erroried estandibilità semantica
+
+- Qual è la differenza tra un tag semantico e uno neutro? quali conosci citali e spiegali
+
+i tag semantici si specializzano sul significato del conteuto che si racchiude nelle parentesi, quelli neutri vengono chiamati così perchè utilizziamo contenitori neutri ovvero generici che non danno contenuto alla pagina,
+
+esempio: i semantici possono essere, header, main footer
+i neutri possono essere, div o span che sono solo raggruppamenti di elementi o anche solo cambio di stile
+
+- Cos'è CSS? quali sono le sue principali caratteristiche?
+
+il Css viene utilizzato principalemnte per l'utilizzo grafico del sito, quindi la parte visiva del sito web, permette di applicare stili agli elementi del html,
+definendo colori, font, animazioni, cambio di transizioni, sicuramente una caratteristica principale è la separazione dalla presentazione alla struttura,
+quindi permette di avere sia l'html e il css molto leggibili tra loro.
+
+- Cos'è e come funziona la cascata in CSS? spiegala e fai un esempio di priorità 
+
+la cascata in css è una caratteristica principale del css ed è un meccanismo che permette il browser di decidere quale regola del Css applicare,
+per esempio se metto moltte regole allo stesso elemento quindi ad un div, e faccio due regole, importerà quello con il numero più alto di regole all interno, 
+questa funzione potrebbe pure essere ignorata se mettiamo un !important allo stile magari con meno funzion
+
+- Cos'è JS? quali sono le sue principali caratteristiche?
+
+Javascriptt è un linguaggio di programmazione che introduce interatività e logica nelle pagine web, in pratica viene utilizzato per manipolare il contenuto dell HTML e CSS,
+Le sue caratteristiche principali sono, che inanzi tutto è il pilastro dei siti web, perchè contiene le basi delle tencologie più moderne. IL fatto che possa essere utilizzato ovunque e 
+ed orientato sul componente ad oggetti. In breve, mentre l'HTML definisce la struttura e il CSS l'estetica, JavaScript è il "motore" che permette al sito di rispondere alle azioni dell'utente in tempo reale.
+
+
+- A cosa serve github? cos'è il versionamento?
+
+GitHub è una piattaforma web che permette di condividire e anche collaborare con i progetto di codice e il versionamento è una funzione di GitHub che permette di tracciare tutte le versioni del progetto, ovvero tutte le modifche che abbiamo fatto,
+permettendo di vedere la history e nel caso di poter andare indietro nella versione precdenza nel caso la nuova versione non funziona più
+
