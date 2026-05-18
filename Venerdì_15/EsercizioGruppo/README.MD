@@ -1,0 +1,1 @@
+fatto esercizio di gruppo creando nuova repository: https://github.com/AngeloRusu24/Test-Pratico-Venerd-15
