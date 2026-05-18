@@ -94,3 +94,8 @@ function avviaAnalisiDati() {
 
 // Avviamo la prima richiesta per far partire il programma
 chiediNumero();
+
+
+// scrivere cd Lunedì_18/Array
+// node array.js 
+// pwe l'esecuzione del programma
