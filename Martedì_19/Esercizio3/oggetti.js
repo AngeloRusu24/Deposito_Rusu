@@ -61,7 +61,7 @@ function estraiNomiProdotti(prodotti) {
 function eseguiProgramma() {
     // Gestione caso limite: Array completamente vuoto
     if (catalogoProdotti.length === 0) {
-        console.log("\n ⚠️ ERRORE CRITICO: Il catalogo è vuoto. Impossibile calcolare le statistiche.");
+        console.log("\n  ERRORE CRITICO: Il catalogo è vuoto. Impossibile calcolare le statistiche.");
         rl.close(); // Ricordati di chiudere l'interfaccia readline
         return;
     }
