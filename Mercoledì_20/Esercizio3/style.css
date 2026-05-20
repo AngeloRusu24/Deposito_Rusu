@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.container {
+    text-align: center;
+    background: rgb(186, 186, 186);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Stile base dell'area di output */
+#outputUtente {
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.stato-iniziale {
+    border: 1px dashed #ccc;
+    color: #666;
+}
+
+/* CLASSE CHIESTA DALLA TRACCIA: Stile durante il caricamento */
+.caricamento {
+    background-color: #fff3cd;
+    border: 2px solid #ffc107;
+    color: #856404;
+    font-weight: bold;
+}
+
+/* CLASSE CHIESTA DALLA TRACCIA: Stile a caricamento completato */
+.successo {
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+    color: #155724;
+    text-align: left;
+    line-height: 1.6;
+}
