@@ -1,0 +1,5 @@
+.evidenziato {
+    color: white;              /* Testo bianco */
+    background-color: blue;    /* Sfondo blu */
+    padding: 10px;             /* Spazio interno di 10 pixel */
+}
