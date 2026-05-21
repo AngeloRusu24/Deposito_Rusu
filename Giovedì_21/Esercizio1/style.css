@@ -1,0 +1,77 @@
+/* --- STYLING GENERALE E CONTENITORE CENTRALE --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f4f1; /* Colore coerente natura */
+}
+
+.contenitore-centrale {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+/* --- PULSANTI ED EFFETTO HOVER --- */
+.pulsantiera {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #2e7d32; /* Verde foresta */
+    color: white;
+    transition: background-color 0.2s;
+}
+
+/* Effetto hover sui pulsanti richiesto dalla Parte 4 */
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* --- CARD PER OGNI ANIMALE (Parte 3 e 4) --- */
+#listaAnimali {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card-animale {
+    padding: 15px;
+    border-left: 5px solid #8d6e63; /* Bordo marrone terra */
+    border-radius: 4px;
+    text-align: left;
+}
+
+/* Classi CSS dedicate chieste dalla Parte 3 */
+.classe-leone {
+    background-color: #fff3e0; /* Arancione chiarissimo */
+}
+
+.classe-elefante {
+    background-color: #eceff1; /* Grigio elefante chiarissimo */
+}
+
+/* --- CAMBIO TEMA (Parte 2 e 3) --- */
+.tema-scuro {
+    background-color: #263238 !important;
+}
+.tema-scuro .contenitore-centrale {
+    background-color: #37474f;
+    color: white;
+}

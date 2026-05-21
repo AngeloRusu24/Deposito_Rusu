@@ -2,7 +2,7 @@
 let bottone = document.getElementById("btnAvvia");
 let output = document.getElementById("outputUtente");
 
-// 2. PROMISE (Senza oggetti, solo stringhe normali)
+// 2. PROMISE 
 function operazioneConPromise() {
     return new Promise(function(resolve, reject) {
         setTimeout(function() {
@@ -17,7 +17,7 @@ function operazioneConPromise() {
     });
 }
 
-// 3. ASYNC / AWAIT (Identico alla tua slide di teoria)
+// 3. ASYNC / AWAIT 
 async function caricaDati() {
     output.textContent = "Caricamento in corso...";
     
