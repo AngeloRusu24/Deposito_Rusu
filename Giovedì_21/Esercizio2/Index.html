@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Libreria Digitale</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="titoloLibreria"> Liberia Digitale</h1>
+
+            <button id="btnHamburger" class="hamburger"> ☰ Menu </button>
+
+            <nav id="menuNavigazione" class="menu-principale">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#libri">Libri</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="layout-centrale">
+            <p id="infoLibreria"> Inserisci i dettagli di un libro </p>
+
+            <section class="sezione-form">
+                <form id="formLibro">
+                    <label for="titolo">Titolo:</label>
+                    <input type="text" id="titolo" name="titolo" required>
+
+                    <label for="autore">Autore:</label>
+                    <input type="text" id="autore" name="autore" required>
+
+                    <label for="annoPubblicazione">Anno di pubblicazione:</label>
+                    <input type="number" id="annoPubblicazione" name="annoPubblicazione" required>
+
+                    <label for="descrizioneLibro"> Breve descrizione: </label>
+                    <input type="text" id="descrizioneLibro" name="descrizioneLibro" required>
+
+                    <button type="submit">Aggiungi libro</button>
+                </form>
+            </section>
+
+            <h2 class="titolo-sezione"> I tuoi libri Registrati</h2>
+            <div id="contenitoreLibri"></div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html> 

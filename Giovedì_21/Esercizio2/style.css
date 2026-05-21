@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f5f0;
+    color: #3e2723
+}
+
+header {
+    background-color: #5d4037; 
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.menu-principale {
+    display: flex;
+    gap: 15px;
+}
