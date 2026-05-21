@@ -24,3 +24,107 @@ header h1 {
     display: flex;
     gap: 15px;
 }
+
+.hamburger {
+    display: none; 
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.layout-centrale {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sezione-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+    border: 1px solid #bcaaa4;
+    border-radius: 4px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #5d4037;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #70554c; 
+}
+
+#contenitoreLibri {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+}
+
+.card-libro {
+    background: white;
+    padding: 15px;
+    border-top: 4px solid #5d4037;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card-libro h3 {
+    margin-top: 0;
+    color: #5d4037;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+
+    .menu-principale {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: #5d4037;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+.mostraMenu {
+    display: flex !important; 
+}
+
+.menu-principale a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+#contenitoreLibri .card-libro {
+    border-top-color: #8d6e63; /* Cambia il colore del bordo superiore per differenziare i libri */
+}
