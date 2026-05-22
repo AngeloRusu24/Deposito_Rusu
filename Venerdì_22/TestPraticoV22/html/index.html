@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Dichiara che il documento è HTML5 -->
+<html lang="it">
+<!-- lang="it" indica al browser che la lingua della pagina è l'italiano -->
+<head>
+    <!-- Il <head> contiene metadati non visibili nella pagina -->
+
+    <meta charset="UTF-8">
+    <!-- Imposta la codifica dei caratteri UTF-8, necessaria per lettere accentate e caratteri speciali -->
+
+    <title>Rifugio degli Amici Fedeli - Home</title>
+    <!-- Titolo che appare nella scheda del browser -->
+
+    <link rel="stylesheet" href="/Venerdì_22/TestPraticoV22/css/style.css">
+    <!-- Collega il foglio di stile CSS esterno che gestisce l'aspetto visivo della pagina -->
+</head>
+<body>
+<!-- Il <body> contiene tutto il contenuto visibile della pagina -->
+
+    <header>
+    <!-- <header> è il blocco in cima alla pagina: contiene il titolo e la navigazione -->
+
+        <h1>Rifugio Amici Fedeli</h1>
+        <!-- Titolo principale della pagina, il più importante per la struttura (H1) -->
+
+        <nav>
+        <!-- <nav> raggruppa i link di navigazione tra le pagine del sito -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/index.html" class="active">Home</a>
+            <!-- Link alla home. class="active" evidenzia il link della pagina corrente -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/cani.html">Cani Disponibili</a>
+            <!-- Link alla pagina con l'elenco dei cani disponibili all'adozione -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/contatti.html">Contatti</a>
+            <!-- Link alla pagina dei contatti del rifugio -->
+        </nav>
+    </header>
+
+    <main class="layout-centrale">
+    <!-- <main> contiene il contenuto principale della pagina -->
+    <!-- class="layout-centrale" applica uno stile CSS per centrare il contenuto -->
+
+        <section class="hero">
+        <!-- Sezione hero: area grande di presentazione con messaggio principale e CTA -->
+
+            <h2>Trova il tuo nuovo migliore amico</h2>
+            <!-- Titolo secondario della sezione, meno importante dell'H1 -->
+
+            <p>Benvenuto nel nostro centro adozioni. Ogni giorno ci prendiamo cura di cani che aspettano solo una famiglia amorevole.</p>
+            <!-- Paragrafo descrittivo del centro adozioni -->
+
+            <button id="btnEsplora">Scopri i nostri ospiti</button>
+            <!-- Bottone con id="btnEsplora" — JavaScript usa l'id per agganciare eventi (es. click) -->
+        </section>
+
+        <section class="info-funzionamento">
+        <!-- Sezione informativa che spiega come funziona il processo di adozione -->
+
+            <h3>Come funziona l'adozione?</h3>
+            <!-- Titolo di terzo livello per questa sottosezione -->
+
+            <p>Il nostro processo è semplice: guarda i cani disponibili, contattaci per fissare un appuntamento conoscitivo e inizia la tua nuova vita insieme a lui!</p>
+            <!-- Spiegazione breve del processo di adozione in 3 passi -->
+        </section>
+    </main>
+
+    <footer>
+    <!-- <footer> è il blocco in fondo alla pagina: contiene info legali e copyright -->
+
+        <p>&copy; 2026 Rifugio Amici Fedeli. Prodotto da ADM Agency. Tutti i diritti riservati.</p>
+        <!-- &copy; è il simbolo la c piccola — indica il copyright del sito -->
+    </footer>
+
+    <script src="/Venerdì_22/TestPraticoV22/js/script.js"></script>
+    <!-- Collega il file JavaScript esterno. Va messo ALLA FINE del body
+         così l'HTML è già caricato quando JS cerca gli elementi della pagina -->
+</body>
+</html>

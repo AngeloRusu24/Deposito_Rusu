@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Dichiara che il documento è HTML5 -->
+<html lang="it">
+<!-- lang="it" indica al browser che la lingua della pagina è l'italiano -->
+<head>
+    <!-- Il <head> contiene metadati non visibili nella pagina -->
+
+    <meta charset="UTF-8">
+    <!-- Imposta la codifica UTF-8, necessaria per lettere accentate e caratteri speciali -->
+
+    <title>Contatti - Centro Adozioni</title>
+    <!-- Titolo che appare nella scheda del browser per questa pagina -->
+
+    <link rel="stylesheet" href="/Venerdì_22/TestPraticoV22/css/style.css">
+    <!-- Collega il foglio di stile CSS condiviso tra tutte le pagine del sito -->
+</head>
+<body>
+<!-- Il <body> contiene tutto il contenuto visibile della pagina -->
+
+    <header>
+    <!-- Intestazione comune a tutte le pagine: logo e navigazione -->
+
+        <h1>Rifugio Amici Fedeli</h1>
+        <!-- Titolo principale del sito, uguale su tutte le pagine -->
+
+        <nav>
+        <!-- Barra di navigazione con i link alle altre pagine -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/index.html">Home</a>
+            <!-- Link per tornare alla home page -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/cani.html">Cani Disponibili</a>
+            <!-- Link alla pagina dei cani disponibili -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/contatti.html" class="active">Contatti</a>
+            <!-- Link alla pagina corrente. class="active" la evidenzia nella navbar -->
+        </nav>
+    </header>
+
+    <main class="layout-centrale">
+    <!-- Contenuto principale della pagina, centrato tramite classe CSS -->
+
+        <h2>Scrivici o vieni a trovarci</h2>
+        <!-- Titolo della sezione contatti -->
+
+        <p>Se vuoi adottare uno dei nostri cani o vuoi fare una donazione al rifugio, usa i recapiti qui sotto.</p>
+        <!-- Paragrafo introduttivo che spiega lo scopo della pagina -->
+
+        <div class="blocco-contatti">
+        <!-- <div> è un contenitore generico. class="blocco-contatti" applica stili CSS specifici -->
+
+            <!-- strong per mettere le parole in grassetto -->
+            <p><strong> Indirizzo:</strong> Via dei Fedeli 12, Roma</p>
+
+            <p><strong> Telefono:</strong> +39 06 1234567</p>
+            <!-- Numero di telefono del rifugio -->
+
+            <p><strong> Email:</strong> info@amicifedeli.it</p>
+            <!-- Indirizzo email di contatto -->
+
+            <p><strong> Orari di apertura:</strong> Dal Lunedì al Sabato, dalle 09:00 alle 18:00</p>
+            <!-- Orari in cui il rifugio è aperto al pubblico -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Rifugio Amici Fedeli. Prodotto da ADM Agency. Tutti i diritti riservati.</p>
+        <!-- &copy; è il simbolo la c piccola — indica il copyright del sito -->
+    </footer>
+
+    <script src="/Venerdì_22/TestPraticoV22/js/script.js"></script>
+    <!-- Script JS in fondo al body: si carica dopo tutto l'HTML,
+         così può trovare gli elementi della pagina senza errori -->
+</body>
+</html>

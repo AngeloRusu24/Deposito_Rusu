@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Dichiara che il documento è HTML5 -->
+<html lang="it">
+<!-- lang="it" indica al browser che la lingua della pagina è l'italiano -->
+<head>
+    <!-- Il <head> contiene metadati non visibili nella pagina -->
+
+    <meta charset="UTF-8">
+    <!-- Imposta la codifica UTF-8 per supportare caratteri speciali e accenti -->
+
+    <title>Cani Disponibili - Centro Adozioni</title>
+    <!-- Titolo che appare nella scheda del browser per questa pagina -->
+
+    <link rel="stylesheet" href="/Venerdì_22/TestPraticoV22/css/style.css">
+    <!-- Collega il foglio di stile CSS condiviso tra tutte le pagine -->
+</head>
+<body>
+<!-- Il <body> contiene tutto il contenuto visibile della pagina -->
+
+    <header>
+    <!-- Intestazione comune: uguale su tutte le pagine del sito -->
+
+        <h1>Rifugio Amici Fedeli</h1>
+        <!-- Titolo principale del sito -->
+
+        <nav>
+        <!-- Navigazione tra le pagine del sito -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/index.html">Home</a>
+            <!-- Link alla home page -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/cani.html" class="active">Cani Disponibili</a>
+            <!-- Link alla pagina corrente. class="active" la evidenzia nella navbar -->
+
+            <a href="/Venerdì_22/TestPraticoV22/html/contatti.html">Contatti</a>
+            <!-- Link alla pagina dei contatti -->
+        </nav>
+    </header>
+
+    <main class="layout-centrale">
+    <!-- Contenuto principale della pagina, centrato tramite classe CSS -->
+
+        <h2>Conosci i nostri ospiti</h2>
+        <!-- Titolo della sezione con i cani disponibili -->
+
+        <p>Ecco i cagnolini pronti per essere adottati. Clicca sulla pagina contatti per chiedere informazioni su di loro.</p>
+        <!-- Paragrafo introduttivo con istruzione per l'utente -->
+
+        <div class="griglia-cani">
+        <!-- Contenitore della griglia di card. class="griglia-cani" gestisce
+             il layout delle card (probabilmente CSS Grid o Flexbox) -->
+
+            <div class="card-cane">
+            <!-- Singola card per il cane Boby. class="card-cane" applica lo stile della card -->
+
+                <h3>Boby</h3>
+                <!-- Nome del cane come titolo di terzo livello -->
+
+                <p><strong>Razza:</strong> Pastore Tedesco</p>
+                <!-- Razza del cane. <strong> mette "Razza:" in grassetto -->
+
+                <p><strong>Età:</strong> 2 anni</p>
+                <!-- Età del cane -->
+
+                <p><strong>Carattere:</strong> Affettuoso, giocherellone e molto socievole con i bambini.</p>
+                <!-- Descrizione del carattere per aiutare l'utente a scegliere -->
+            </div>
+
+            <div class="card-cane">
+            <!-- Seconda card: cane Luna -->
+
+                <h3>Luna</h3>
+                <p><strong>Razza:</strong> Labrador</p>
+                <p><strong>Età:</strong> 1 anno</p>
+                <p><strong>Carattere:</strong> Molto energica, adora correre e giocare con la pallina.</p>
+            </div>
+
+            <div class="card-cane">
+            <!-- Terza card: cane Rocky -->
+
+                <h3>Rocky</h3>
+                <p><strong>Razza:</strong> Meticcio</p>
+                <p><strong>Età:</strong> 4 anni</p>
+                <p><strong>Carattere:</strong> Calmo, ubbidiente, perfetto per la vita in appartamento.</p>
+                <!-- "Meticcio" indica un cane di razza mista, non purosangue -->
+            </div>
+
+        </div>
+        <!-- fine .griglia-cani -->
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Rifugio Amici Fedeli. Prodotto da ADM Agency. Tutti i diritti riservati.</p>
+        <!-- &copy; è il simbolo la c piccola — indica il copyright del sito -->
+    </footer>
+
+    <script src="/Venerdì_22/TestPraticoV22/js/script.js"></script>
+    <!-- JavaScript caricato in fondo al body: garantisce che tutto l'HTML
+         sia già pronto prima che lo script venga eseguito -->
+</body>
+</html>

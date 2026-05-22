@@ -1,1 +1,1 @@
-1. console.log("Sito Zoo Safari caricato");
+ console.log("Sito Zoo Safari caricato");

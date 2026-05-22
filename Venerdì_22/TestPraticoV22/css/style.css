@@ -1,0 +1,102 @@
+/* Stili strutturali per l'intera pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;     
+}
+
+/* Stile dell'header superiore: crea una barra scura continua ad inizio pagina */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+/* Stile dei collegamenti del menu */
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Colore arancione quando passi sopra con il mouse o sulla pagina attiva */
+nav a:hover {
+    color: #f97316;
+}
+
+/* Contenitore centrale per limitare la larghezza massima del sito su PC */
+.layout-centrale {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Contenitore promozionale della Home Page */
+.hero {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Bottone semplice e colorato */
+button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Bottone un pochino più scuro quando ci si passa sopra con il mouse */
+button:hover {
+    background-color: #ea580c;
+}
+
+/* Sezione informativa sotto la hero */
+.info-funzionamento, .blocco-contatti {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Struttura a griglia per mostrare le schede dei cani affiancate */
+.griglia-cani {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Stile della singola scheda del cane */
+.card-cane {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-top: 4px solid #f97316; /* Bordo superiore arancione per evidenziare */
+}
+
+/* Footer scuro a fondo pagina, identico per stile all'header */
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
