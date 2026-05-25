@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Negozio Giocattoli - Riepilogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html">Inserisci</a>
+            <a href="elenco.html">Elenco</a>
+            <a href="riepilogo.html">Riepilogo</a>
+        </nav>
+
+        <h1>Riepilogo e Statistiche</h1>
+        
+        <div class="stat-box">
+            <h3>Dati Generali</h3>
+            <p>Numero totale di giocattoli: <strong id="totaleGiocattoli">0</strong></p>
+            <p>Prezzo medio: <strong id="prezzoMedio">0.00 €</strong></p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Categorie Disponibili</h3>
+            <p id="listaCategorie">Nessuna categoria</p>
+        </div>
+
+        <div class="stat-box" style="border-left: 5px solid #e74c3c;">
+            <h3>Prodotti Non Disponibili (Esauriti)</h3>
+            <ul id="listaNonDisponibili"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7fb;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Menu di navigazione tra le 3 pagine */
+nav {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+nav a {
+    text-index: none;
+    color: #3498db;
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Stile Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Stile Lista Giocattoli (Pagina 2) */
+.giocattolo-card {
+    background: #f8f9fa;
+    border-left: 5px solid #3498db;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Stile Box Riepilogo (Pagina 3) */
+.stat-box {
+    background: #e8f4fd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
