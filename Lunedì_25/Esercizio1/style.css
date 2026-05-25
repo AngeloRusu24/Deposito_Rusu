@@ -1,0 +1,159 @@
+/* RESET GENERALE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding e bordi nel calcolo delle dimensioni */
+    font-family: Arial, sans-serif;
+}
+
+/* STRUTTURA DEL BODY & CAMBIO TEMA */
+body {
+    background-color: #f4f7fb; /* Sfondo chiaro predefinito */
+    color: #333;
+    display: flex;             /* Centra la dashboard nello schermo */
+    justify-content: center;   
+    align-items: center;       
+    min-height: 100vh;         
+    padding: 20px;             
+    transition: 0.3s;          /* Sfuma i colori nel passaggio chiaro/scuro */
+}
+
+/* Classe attivata da JS per invertire i colori in modalità scura */
+body.dark {
+    background-color: #222; 
+    color: white;           
+}
+
+/* CONTENITORE PRINCIPALE (DASHBOARD) */
+.app-container {
+    background-color: white; 
+    width: 100%;             
+    max-width: 500px;        /* Impedisce alla scatola di allargarsi troppo */
+    padding: 30px;           
+    border-radius: 12px;     
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+/* Adatta lo sfondo della dashboard in modalità scura */
+body.dark .app-container {
+    background-color: #333; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+}
+
+h1 {
+    text-align: center;      
+    margin-bottom: 10px;     
+    font-size: 1.8rem;       
+}
+
+.intro {
+    text-align: center;      
+    color: #666;             
+    margin-bottom: 20px;     
+    font-size: 0.95rem;
+}
+
+body.dark .intro {
+    color: #ccc;             
+}
+
+.theme-control {
+    text-align: right;       /* Sposta il tasto del tema in alto a destra */
+    margin-bottom: 15px;
+}
+
+/* MODULO E CAMPI DI INPUT */
+.gamer-form {
+    display: flex;
+    flex-direction: column;  /* Incolonna i campi in verticale */
+    gap: 15px;               /* Spazio uniforme tra i vari gruppi di input */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;  /* Mette l'etichetta sopra la casella di testo */
+    gap: 5px;                
+}
+
+.input-group label {
+    font-weight: bold;       
+    font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group select {
+    padding: 10px;           
+    border: 1px solid #ccc;  
+    border-radius: 6px;      
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Inversione colori dei campi per la modalità scura */
+body.dark .input-group input,
+body.dark .input-group select {
+    background-color: #444;  
+    border-color: #555;      
+    color: white;            
+}
+
+/* PULSANTI E INTERAZIONI */
+.form-action {
+    display: flex;
+    gap: 10px;               /* Affianca i pulsanti Salva e Reset */
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;      
+    font-size: 0.95rem;
+    cursor: pointer;         /* Mostra la manina al passaggio del mouse */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f0f0f0; 
+    color: #333;
+    transition: 0.2s;        /* Rende fluido l'effetto hover */
+}
+
+button:hover {
+    background-color: #e0e0e0; /* Scurisce il tasto al passaggio del mouse */
+}
+
+body.dark button {
+    background-color: #555;
+    color: white;
+    border-color: #666;
+}
+
+body.dark button:hover {
+    background-color: #666;
+}
+
+/* CARD PROFILO (RISULTATO VISIVO) */
+.profile-card {
+    margin-top: 25px;        
+    padding: 15px;           
+    background-color: #f8fbff; 
+    border-left: 5px solid #4070a0; /* Barra colorata distintiva sul lato sinistro */
+    border-radius: 6px;
+}
+
+body.dark .profile-card {
+    background-color: #444;  
+}
+
+.profile-card h3 {
+    margin-bottom: 10px;
+    color: #4070a0;          
+}
+
+.card-content p {
+    margin: 5px 0;           
+    font-size: 0.95rem;
+}
+
+/* Classe di utilità per nascondere la card all'avvio o dopo il reset */
+.hidden {
+    display: none !important; 
+}

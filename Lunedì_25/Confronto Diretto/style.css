@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    background-color: white;
+    color: black;
+    /* Transizione fluida per rendere piacevole il cambio di tema */
+    transition: 0.3s;
+}
+
+/* Classe applicata al body quando il Local Storage rileva il tema scuro */
+.dark {
+    background-color: #222;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}

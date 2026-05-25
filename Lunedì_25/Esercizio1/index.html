@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Videogiocatore — J.H.C Esercizio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <h1>Dashboard Videogiocatore</h1>
+        <p class="intro">Personalizza le tue preferenze di gioco e salva i dati all'interno del browser.</p>
+
+        <div class="theme-control">
+            <button id="temaButton">Cambia tema - Bianco/Nero</button>
+        </div>
+
+        <form id="gamerForm" class="gamer-form" onsubmit="return false;">
+
+            <div class="input-group">
+                <label for="nomeGiocatore">Nome utente:</label>
+                <input type="text" id="nomeGiocatore" name="username" placeholder="Inserisci il tuo nome utente">
+            </div>
+
+            <div class="input-group">
+                <label for="giocoPreferito">Gioco preferito:</label>
+                <input type="text" id="giocoPreferito" name="favoriteGame" placeholder="Inserisci il tuo gioco preferito">
+            </div>
+
+            <div class="input-group">
+                <label for="piattaformaPreferita">Piattaforma preferita:</label>
+                <select id="piattaformaPreferita" name="preferredPlatform">
+                    <option value="">Seleziona una piattaforma</option>
+                    <option value="PC">PC</option>
+                    <option value="PlayStation">PlayStation</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Nintendo">Nintendo</option>
+                </select> </div>
+
+            <div class="form-action">
+                <button type="submit" id="salvaButton">Salva preferenze</button>
+                <button type="button" id="cancellaButton">Reset</button>
+            </div>
+        </form>
+
+        <div id="visualizzazioneDati" class="profile-card hidden">
+            <h3>Profilo Giocatore Attivo</h3>
+            <div class="card-content">
+                <p><strong>Gamertag:</strong> <span id="viewNome">--</span></p>
+                <p><strong>Titolo Preferito:</strong> <span id="viewGioco">--</span></p>
+                <p><strong>Hardware / Console:</strong> <span id="viewPiattaforma">--</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
