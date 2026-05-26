@@ -1,0 +1,38 @@
+/* Stili globali per centrare il contenuto di tutte le pagine */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 300px;
+}
+
+/* Colori personalizzati per i titoli delle varie sezioni */
+.txt-home { color: #007bff; }
+.txt-info { color: #28a745; }
+.txt-calc { color: #dc3545; }
+
+/* Stile specifico per i componenti della calcolatrice */
+input, button { 
+    padding: 10px; 
+    font-size: 16px; 
+    margin: 5px; 
+    width: 60px; 
+    text-align: center; 
+}
+input[type="text"] { 
+    width: 140px; 
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+}

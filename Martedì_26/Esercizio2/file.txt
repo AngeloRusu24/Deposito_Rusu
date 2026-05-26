@@ -1,0 +1,1 @@
+Questo e il messaggio personalizzato letto dal disco rigido tramite il modulo fs di Node.js!

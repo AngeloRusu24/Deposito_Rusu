@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <h1 class="txt-calc">Calcolatrice Minimal</h1>
+        <input type="number" id="n1" placeholder="0">
+        <input type="number" id="n2" placeholder="0"><br>
+        <button onclick="calcola('+')">+</button>
+        <button onclick="calcola('-')">-</button><br>
+        <input type="text" id="risultato" placeholder="Risultato" readonly>
+    </div>
+
+    <script>
+        function calcola(op) {
+            const v1 = parseFloat(document.getElementById('n1').value) || 0;
+            const v2 = parseFloat(document.getElementById('n2').value) || 0;
+            let res = op === '+' ? v1 + v2 : v1 - v2;
+            document.getElementById('risultato').value = res;
+        }
+    </script>
+</body>
+</html>
