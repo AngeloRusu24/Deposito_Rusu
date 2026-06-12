@@ -1,0 +1,11 @@
+<ul class="lista">
+  @for (item of service.items(); track $index) {
+    <li>
+      <span>{{ item }}</span>
+      <button (click)="service.removeItem($index)">Rimuovi</button>
+    </li>
+  }
+  @if (service.items().length === 0) {
+    <p class="vuota">Nessun elemento nella lista.</p>
+  }
+</ul>

@@ -1,0 +1,19 @@
+.preview {
+  width: 280px;
+  padding: 1.25rem;
+  border-radius: 12px;
+  font-family: sans-serif;
+  border: 1px solid #e5e7eb;
+  background: white;
+  color: #111827;
+  transition: background 0.3s, color 0.3s;
+}
+
+.preview.dark {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
+p { margin: 0 0 6px; font-size: 15px; }
+.tema { font-size: 13px; color: inherit; opacity: 0.6; }

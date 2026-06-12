@@ -1,0 +1,9 @@
+<div class="add-form">
+  <input
+    type="text"
+    [(ngModel)]="valore"
+    placeholder="Aggiungi elemento..."
+    (keyup.enter)="aggiungi()"
+  />
+  <button (click)="aggiungi()">Aggiungi</button>
+</div>

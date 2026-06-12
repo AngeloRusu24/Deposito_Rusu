@@ -1,0 +1,28 @@
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 300px;
+  font-family: sans-serif;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+li button {
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+  color: #A32D2D;
+  cursor: pointer;
+}
+
+.vuota { font-size: 13px; color: #9ca3af; padding: 8px 12px; }
