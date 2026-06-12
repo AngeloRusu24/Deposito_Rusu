@@ -1,0 +1,9 @@
+<div class="list">
+  @for (p of prodotti; track p.nome) {
+    <app-product-card
+      [nome]="p.nome"
+      [prezzo]="p.prezzo"
+      [disponibile]="p.disponibile"
+    />
+  }
+</div>

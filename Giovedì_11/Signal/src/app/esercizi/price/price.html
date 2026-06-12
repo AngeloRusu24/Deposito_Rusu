@@ -1,0 +1,19 @@
+<div class="price-card">
+  <h2>Calcolatore IVA</h2>
+
+  <label>Prezzo netto (€)</label>
+  <input type="number" [value]="prezzoNetto()" (input)="aggiornaPrezzo($event)" />
+
+  <div class="row">
+    <span>Prezzo netto</span>
+    <strong>{{ prezzoNetto() }}€</strong>
+  </div>
+  <div class="row">
+    <span>Aliquota IVA</span>
+    <strong>{{ aliquotaIva() }}%</strong>
+  </div>
+  <div class="row total">
+    <span>Prezzo lordo</span>
+    <strong>{{ prezzoLordo().toFixed(2) }}€</strong>
+  </div>
+</div>

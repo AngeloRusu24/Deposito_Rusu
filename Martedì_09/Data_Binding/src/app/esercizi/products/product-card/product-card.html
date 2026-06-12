@@ -1,0 +1,21 @@
+<div class="card">
+  <img [src]="imageUrl" alt="Immagine prodotto" />
+  <div class="card-body">
+    <p class="brand">{{ brand }}</p>
+    <h2>{{ name }}</h2>
+    <div class="price-row">
+      <span class="final-price">{{ finalPrice() }}€</span>
+      <span class="original-price">{{ price }}€</span>
+      <span class="badge">–20%</span>
+    </div>
+    <div class="tags">
+      <span class="tag" *ngFor="let tag of tags">{{ tag }}</span>
+    </div>
+    <p [class]="available ? 'available' : 'not-available'">
+      {{ available ? 'Disponibile' : 'Non disponibile' }}
+    </p>
+    <hr />
+    <input type="text" [(ngModel)]="name" placeholder="Modifica nome prodotto" />
+    <button (click)="compra()" [disabled]="!available">Acquista</button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.stelle { display: flex; gap: 4px; }
+
+.stella {
+  font-size: 32px;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.stella:hover { color: #f59e0b; }
